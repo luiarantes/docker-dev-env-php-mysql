@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: . 
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ../code:/var/www/html
+    links: 
+      - db  
+
+  db:
+    image: mysql:5.7
+    volumes:
+     - /var/lib/mysql
+    environment:
+     - MYSQL_ROOT_PASSWORD=mysql.rootp4ss
+     - MYSQL_DATABASE=mysqldb

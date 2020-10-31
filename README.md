@@ -1,2 +1,1 @@
-# docker-dev-env-php-mysql
-Ambiente de desenvolvimento Docker - PHP + MySql
+Ambiente de Desenvolvimento Docker - PHP + MySql
